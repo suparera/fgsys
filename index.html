@@ -1,0 +1,159 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="css/smoothness/jquery-ui-1.9.2.custom.css" rel="stylesheet">
+    <script src="js/jquery-1.8.3.js"></script>
+    <script src="js/jquery-ui-1.9.2.custom.js"></script>
+    <title>Untitled Page</title>
+
+    <style type="text/css">
+        body {
+            background-color: #FFFFFF;
+            color: #000000;
+        }
+    </style>
+    <style type="text/css">
+        a {
+            color: #0000FF;
+            text-decoration: underline;
+        }
+
+        a:visited {
+            color: #800080;
+        }
+
+        a:active {
+            color: #FF0000;
+        }
+
+        a:hover {
+            color: #0000FF;
+            text-decoration: underline;
+        }
+    </style>
+    <style type="text/css">
+        #fgReceiveBtn {
+            border: 2px #C0C0C0 solid;
+            background-color: transparent;
+
+        }
+
+        #fgReceiveBtn td {
+            padding: 0px 0px 0px 0px;
+        }
+
+        #fgReceiveBtn td div {
+            white-space: nowrap;
+        }
+
+        #Image1 {
+            border: 0px #000000 solid;
+        }
+
+        #Line2 {
+            border-width: 0;
+            height: 20px;
+            width: 92px;
+        }
+
+        #Image2 {
+            border: 0px #000000 solid;
+        }
+
+        #Line1 {
+            border-width: 0;
+            height: 20px;
+            width: 92px;
+        }
+
+        #Line3 {
+            border-width: 0;
+            height: 21px;
+            width: 102px;
+        }
+
+        #fgToWipMachineBtn {
+
+            background-color: transparent;
+        }
+
+        #fgToWipMachineBtn td {
+            padding: 0px 0px 0px 0px;
+        }
+
+        #fgToWipMachineBtn td div {
+            white-space: nowrap;
+        }
+
+        #Line4 {
+            border-width: 0;
+            height: 22px;
+            width: 106px;
+        }
+
+        #Image3 {
+            border: 0px #000000 solid;
+        }
+    </style>
+
+    <script>
+        $(function () {
+            $("#fgReceiveBtn")
+                    .button()
+                    .click(function (event) {
+                        window.location.href="maWipToFG.html";
+                    });
+        });
+
+        $(function () {
+            $("#fgToWipMachineBtn")
+                    .button()
+                    .click(function (event) {
+                        event.preventDefault();
+                    });
+        });
+    </script>
+</head>
+<body>
+HIw
+<div id="wb_Image1" style="position:absolute;left:62px;top:293px;width:100px;height:100px;z-index:1;">
+    <img src="images/productionLine.jpg" id="Image1" alt="" border="0" style="width:100px;height:100px;"></div>
+<div id="wb_Line2" style="position:absolute;left:153px;top:334px;width:72px;height:100px;z-index:2;">
+    <img src="images/img0001.png" id="Line2" alt=""></div>
+<table id="fgReceiveBtn" style="position:absolute;left:238px;top:291px;padding: 0;border: 0;border-spacing: 0;">
+    <tr>
+        <td style="background-color:transparent;border:1px #C0C0C0 solid;text-align:left;vertical-align:top;height:70;">
+            <img src="image/ArrowFGIn.jpg" height="90" alt=""/>
+        </td>
+    </tr>
+    <tr>
+        <td style="background-color:transparent;text-align:left;vertical-align:top;">
+            รับ FG
+        </td>
+    </tr>
+</table>
+
+<div id="wb_Image2" style="position:absolute;left:419px;top:292px;width:100px;height:100px;z-index:3;">
+    <img src="images/fg.jpg" id="Image2" alt="" border="0" style="width:100px;height:100px;"></div>
+<div id="wb_Line1" style="position:absolute;left:350px;top:333px;width:72px;height:0px;z-index:4;">
+    <img src="images/img0002.png" id="Line1" alt=""></div>
+<div id="wb_Line3" style="position:absolute;left:510px;top:329px;width:82px;height:1px;z-index:5;">
+    <img src="images/img0003.png" id="Line3" alt=""></div>
+<table style="position:absolute;left:605px;top:291px;z-index:6;" id="fgToWipMachineBtn">
+    <tr>
+        <td style="background-color:transparent;text-align:left;vertical-align:top;height:46px;">
+            <img src="image/ArrowFGIn.jpg" height="90" alt=""/>
+        </td>
+    </tr>
+    <tr>
+        <td style="background-color:transparent;text-align:center;vertical-align:top;height:46px;">
+            FG<br>to<br>WIP M/C</td>
+    </tr>
+</table>
+<div id="wb_Line4" style="position:absolute;left:700px;top:332px;width:86px;height:2px;z-index:7;">
+    <img src="images/img0004.png" id="Line4" alt=""></div>
+<div id="wb_Image3" style="position:absolute;left:794px;top:292px;width:150px;height:100px;z-index:8;">
+    <img src="images/shippingtruck.jpg" id="Image3" alt="" border="0" style="width:150px;height:100px;"></div>
+</body>
+</html>
